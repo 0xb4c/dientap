@@ -32,6 +32,57 @@ $ git push origin master
 origin: name of Remote
 master: name of Branch
 
+Check Remote
+$ git remote -v
+
+Rename Remote name
+$ git remote rename origin 0xb4c
+$ git remote -v
+0xb4c https://github.com/thachphamblog/hoc-git.git (fetch)
+0xb4c https://github.com/thachphamblog/hoc-git.git (push)
+
+Add new Remote
+$ git remote add 0xb4c2 https://github.com/...
+$ git remote -v
+0xb4c https://github.com/...(fetch)
+0xb4c https://github.com/...(push)
+0xb4c2 https://github.com/...2 (fetch)
+0xb4c2 https://github.com/...2 (push)
+
+Get data: 
+$ git fetch 0xb4c2
+
+
 ==========================================================
 Staging Area nghĩa là một khu vực mà nó sẽ được chuẩn bị cho quá trình commit.
+working directory ---git add---> Staging Area ---git commit---> Repository
+Tracked – Là tập tin đã được đánh dấu theo dõi trong Git để bạn làm việc với nó. 
+Và trạng thái Tracked nó sẽ có thêm các trạng thái phụ khác là:
+Unmodified (chưa chỉnh sửa gì), 
+Modified (đã chỉnh sửa) và 
+Staged (đã sẵn sàng để commit).
+Untracked – Là tập tin còn lại mà bạn sẽ không muốn làm việc với nó trong Git.
+
+Skip staging commit: (with -a parameter)
+$ git commit -a -m "Skipped Staging Are to commit"
+
+==========================================================
+git log
+git log -p //for more details
+==========================================================
+Bỏ tập tin ra khỏi Staging Area
+$ git reset HEAD tên_file
+==========================================================
+$ git clone
+sao chép toàn bộ dữ liệu trên repository và sao chép luôn các thiết lập về repository
+chỉ nên dùng cho master branch mới trên PC
+
+$ git pull
+Lấy data từ repository và merge với cái đang có trên PC
+
+$ git fetch
+Lất data nhưng gộp ở branch khác
+==========================================================
+
+
 
