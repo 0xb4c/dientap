@@ -1,0 +1,37 @@
+How to use git and github
+- installing git
+==========================================================
+- Chung thuc nguoi dung:
+$ git config --global user.name "0xb4c"
+$ git config --global user.email "nguyenbacdlld@gmail.com"
+- Hien thi thong tin
+$ cat ~/.gitconfig
+==========================================================
+REPOSITORY: 2 types
+
+(1) Local Repository - Stored in Computer
+$ git init <ten-folder>
+Folder .git/ - info about repository
+Make file tracked 
+$ git add <ten-file> // can use * to gather all files
+$ git status
+
+(2) Remote Repository - Stored in github
+CLone
+$ git clone https://...
+
+$ cd hoc-git
+$ echo "# Huong dan Git co ban" > README.md
+$ git add README.md
+
+//Save changed
+$ git commit -m "First commit on Github"            //but it's still not in Github
+
+Push to github
+$ git push origin master
+origin: name of Remote
+master: name of Branch
+
+==========================================================
+Staging Area nghĩa là một khu vực mà nó sẽ được chuẩn bị cho quá trình commit.
+
