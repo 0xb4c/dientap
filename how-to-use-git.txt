@@ -3,7 +3,7 @@ How to use git and github
 ==========================================================
 - Chung thuc nguoi dung:
 $ git config --global user.name "0xb4c"
-$ git config --global user.email "nguyenbacdlld@gmail.com"
+$ git config --global user.email ""
 - Hien thi thong tin
 $ cat ~/.gitconfig
 ==========================================================
